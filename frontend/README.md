@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+## **Project Description**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This frontend is a Single-Page Application (SPA) built using react, designed to interact with the backend Speech-to-Text Transcription API. Users can upload audio files, retrieve transcriptions, and search for transcriptions stored in the database. The application provides a user-friendly interface for managing audio-to-text conversion efficiently.
+## **Technologies Used**
 
-## Available Scripts
+- **React**: Modern JavaScript framework for building a responsive UI.
+- **Axios**: Handles API requests to communicate with the backend.
+- **State Management**: React Context
+# Project Structure
+```bash
+AI_speech_to_text/
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── FileUpload.js       
+│   │   │   ├── TranscriptionList.js          
+│   │   │   ├── TranscriptionSearch.js          
+│   ├── App.js               
+│   ├── App.css         
+│   ├── index.css               
+│   ├── index.js                
+```
 
-In the project directory, you can run:
+## **Pre-Requisites**
+- Node.js: Version 18+
+- Package Manager: npm
+- Git bash (If using windows)
 
-### `npm start`
+## **Installation Instructions**
+### 1. Clone the Repository:
+```bash
+git clone https://github.com/mikechngwk/AI_speech_to_text.git
+cd AI_speech_to_text/frontend
+```
+### 2. Install Dependencies:
+Ensure you are in `/AI_speech_to_text/frontend` directory.
+- Open **gitbash** in current directory and run (Windows):
+- Open **terminal** in current directory and run (MacOS):
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+npm install
+```
+### 3. Test the React SPA
+https://localhost:3000
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## **Application Features**
+**File Upload**
+- Upload audio file for transcription
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Retrieve all transcriptions**
 
-### `npm run build`
+- List all transcriptions retrieved from the backend
+- Show timestamp,filename and transcripted text
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Search transcription by filename**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+- **Endpoint**: GET /search?query=<file_name>
+- **Description**: Searches transcriptions by file name
+- **Response**: 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
