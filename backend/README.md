@@ -70,7 +70,7 @@ Once up & running, visit:
 ### 1. Clone the Repository:
 ```bash
 git clone https://github.com/mikechngwk/AI_speech_to_text.git
-cd AI_speech_to_text/backend
+cd AI_speech_to_text/
 ```
 ### 2. Set up your virtual environment (optional but recommended):
 
@@ -80,9 +80,9 @@ python -m venv venv
 
 ### 3. Activate the virtual environment:
 
-- On **Windows**:
+- On **Windows (Using gitbash)**:
 ```bash
-venv\Scripts\activate
+source .venv\Scripts\activate
 ```
 
 - On **macOS/Linux**:
