@@ -38,7 +38,7 @@ Ensure you are in `/AI_speech_to_text/frontend` directory.
 - Open **terminal** in current directory and run (MacOS):
 
 ```bash
-npm install
+npm start
 ```
 ### 3. Test the React SPA
 https://localhost:3000
@@ -61,4 +61,6 @@ https://localhost:3000
 - **Description**: Searches transcriptions by file name
 - **Response**: 
 
+### Frontend Page:
+![image info](./images/frontend.png)
 
