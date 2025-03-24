@@ -54,8 +54,9 @@ git clone https://github.com/mikechngwk/AI_speech_to_text.git
 cd AI_speech_to_text/backend
 ```
 ### 2. Run setup script with gitbash:
-Ensure you are in `/AI_speech_to_text/backend` directory. 
-Open **Gitbash** in current directory and run:
+Ensure you are in `/AI_speech_to_text/backend` directory.
+- Open **gitbash** in current directory and run (Windows):
+- Open **terminal** in current directory and run (MacOS):
 
 ```bash
 bash setup.sh
