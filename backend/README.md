@@ -150,13 +150,25 @@ docker run -p 8000:8000 speech-transcription-backend
 - **Description**: Fetches all stored transcriptions
 - **Response**: 
 ```json
-[
-  {
-    "file_name": "Sample1_123456.mp3",
-    "transcription": "Testing Transcription 1 2 3",
-    "created_at": "2025-03-18T12:00:00"
-  }
-]
+{
+  "transcriptions": [
+    {
+      "filename": "Sample 2_411d0546adec4b04b2a776568d652097.mp3",
+      "transcription": "Help me. I can't find my parents. They told me to wait for them, but I saw this pretty butterfly and followed it. Now I am lost.",
+      "created_at": "2025-03-24 20:49:38.499936"
+    },
+    {
+      "filename": "Sample 3_97ff9db417c645158b887c8260470198.mp3",
+      "transcription": "What should I have for lunch? There's only young tofu, western, Japanese, economic rice stalls here. I'm sick of the choices here.",
+      "created_at": "2025-03-24 20:50:16.758419"
+    },
+    {
+      "filename": "Sample 3_d5ad65bcd60c4b3aa43b31008d5e0bc0.mp3",
+      "transcription": "What should I have for lunch? There's only young tofu, western, Japanese, economic rice stalls here. I'm sick of the choices here.",
+      "created_at": "2025-03-24 21:04:46.446452"
+    }
+  ]
+}
 ```
 **Search Transcriptions**
 
@@ -164,12 +176,16 @@ docker run -p 8000:8000 speech-transcription-backend
 - **Description**: Searches transcriptions by file name
 - **Response**: 
 ```json
-[
-  {
-    "file_name": "Sample1_123456.mp3",
-    "transcription": "Testing Transcription 1 2 3",
-    "created_at": "2025-03-18T12:00:00"
-  }
-]
+{
+  "results": [
+    {
+      "filename": "Sample 2_411d0546adec4b04b2a776568d652097.mp3",
+      "transcription": "Help me. I can't find my parents. They told me to wait for them, but I saw this pretty butterfly and followed it. Now I am lost.",
+      "created_at": "2025-03-24 20:49:38.499936"
+    }
+  ]
+}
 ```
+### FastAPI Page:
+![image info](./images/fastapi.png)
 
