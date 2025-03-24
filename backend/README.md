@@ -98,7 +98,7 @@ pip install -r requirements.txt
 ### 5. Running the Application:
 After installing the dependencies, you can run the FastAPI server with the following command, ensure you are inside `backend` directory:
 ```bash
-uvicorn main:app --host 0.0.0.0 --port 8000
+uvicorn app.main:app --host 0.0.0.0 --port 8000
 ```
 
 ### 6. Test the API
