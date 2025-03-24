@@ -4,7 +4,7 @@ from datetime import datetime
 
 DB_PATH = "transcriptions.db"
 
-# Initialize database and create table if it doesn't exist
+#Initialize database and create table if it doesn't exist
 def init_db():
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
