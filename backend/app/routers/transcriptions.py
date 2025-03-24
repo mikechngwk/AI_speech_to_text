@@ -1,6 +1,6 @@
 # app/routers/transcriptions.py
 from fastapi import APIRouter
-import models
+from app import models
 
 router = APIRouter()
 

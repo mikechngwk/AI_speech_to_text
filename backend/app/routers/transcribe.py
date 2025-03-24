@@ -2,8 +2,8 @@
 import os
 import uuid
 from fastapi import APIRouter, UploadFile, File, HTTPException
-from utils import file_utils, whisper
-import models
+from app.utils import file_utils, whisper
+from app import models
 router = APIRouter()
 
 UPLOAD_DIR = "uploads"

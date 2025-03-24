@@ -1,6 +1,6 @@
 # app/routers/search.py
 from fastapi import APIRouter, Query
-import models
+from app import models
 
 router = APIRouter()
 

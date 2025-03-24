@@ -1,6 +1,6 @@
 # app/main.py
 from fastapi import FastAPI
-from routers import health, transcribe, transcriptions, search
+from app.routers import health, transcribe, transcriptions, search
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="Speech to Text FastAPI_21032025")
