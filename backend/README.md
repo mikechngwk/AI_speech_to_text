@@ -16,8 +16,8 @@ AI_speech_to_text/
 ├── backend/
 │   ├── app/
 │   │   ├── init.py
-│   │   ├── main.py              
-│   │   ├── models.py            
+│   │   ├── main.py                 # starting point of fastapi
+│   │   ├── models.py               # db operations
 │   │   ├── routers/
 │   │   │   ├── __init__.py        
 │   │   │   ├── health.py           # endpoint for application healthcheck
@@ -26,7 +26,7 @@ AI_speech_to_text/
 │   │   │   ├── transcriptions.py   # endpoint for to retrieve all past transcriptions
 │   │   ├── utils/
 │   │   │   ├── __init__.py        
-│   │   │   ├── file_utils.py        
+│   │   │   ├── file_utils.py    # to generate unique name for file (in case of same filename already exist in db)    
 │   │   │   ├── whisper.py       # audio preprocessing AI model
 │   ├── Dockerfile               # containerization
 │   ├── requirements.txt         # dependencies
