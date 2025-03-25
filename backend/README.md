@@ -53,6 +53,7 @@ AI_speech_to_text/
 To run the project, you’ll need to install the following dependencies. You can set up your environment and install the required packages using the `requirements.txt` file.
 
 ## **Installation (script)**
+[Installation by script demo](https://www.youtube.com/watch?v=your_video_id)
 ### 1. Clone the Repository:
 ```bash
 git clone https://github.com/mikechngwk/AI_speech_to_text.git

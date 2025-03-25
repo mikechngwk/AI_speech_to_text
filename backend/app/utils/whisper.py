@@ -1,4 +1,3 @@
-# app/utils/whisper.py
 import whisper
 
 # Load the whisper-tiny model
