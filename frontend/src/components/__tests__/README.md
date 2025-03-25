@@ -36,5 +36,5 @@ npm test
 ``````
 
 ### Test result (desired):
-![image info](./image_test/frontendtestcases.png)
+![image info](./image_test/frontendtestcases1.png)
 
