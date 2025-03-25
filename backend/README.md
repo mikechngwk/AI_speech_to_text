@@ -76,7 +76,7 @@ Once up & running, visit:
 ### 1. Clone the Repository:
 ```bash
 git clone https://github.com/mikechngwk/AI_speech_to_text.git
-cd AI_speech_to_text/
+cd AI_speech_to_text/backend
 ```
 ### 2. Set up your virtual environment (optional but recommended):
 
