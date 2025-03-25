@@ -57,7 +57,7 @@ To run the project, you’ll need to install the following dependencies. You can
 ### 1. Clone the Repository:
 ```bash
 git clone https://github.com/mikechngwk/AI_speech_to_text.git
-cd AI_speech_to_text/backend
+cd AI_speech_to_text/
 ```
 ### 2. Run setup script with gitbash:
 Ensure you are in `/AI_speech_to_text/backend` directory.
