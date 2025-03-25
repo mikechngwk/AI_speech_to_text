@@ -27,12 +27,7 @@ AI_speech_to_text/
 │   │   ├── utils/
 │   │   │   ├── __init__.py        
 │   │   │   ├── file_utils.py    # to generate unique name for file (in case of same filename already exist in db)    
-│   │   │   ├── whisper.py
-│   │   ├── test/
-│   │   │   ├── __init__.py        
-│   │   │   ├── test_getalltranscriptions.py    # to generate unique name for file (in case of same filename already exist in db)    
-│   │   │   ├── test_search.py  
-│   │   │   ├── test_transcribe.py 
+│   │   │   ├── whisper.py       # audio preprocessing AI model
 │   ├── Dockerfile               # containerization
 │   ├── requirements.txt         # dependencies
 │   ├── README.md                # documentation
