@@ -27,6 +27,7 @@ AI_speech_to_text/
 - Git bash (If using windows)
 
 ## **Installation Instructions**
+[Installation demo (VIDEO)](https://www.youtube.com/watch?v=AtbPpBTMBeY)
 ### 1. Clone the Repository:
 ```bash
 git clone https://github.com/mikechngwk/AI_speech_to_text.git
@@ -38,6 +39,7 @@ Ensure you are in `/AI_speech_to_text/frontend` directory.
 - Open **terminal** in current directory and run (MacOS):
 
 ```bash
+npm install
 npm start
 ```
 ### 3. Test the React SPA

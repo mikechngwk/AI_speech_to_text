@@ -16,7 +16,7 @@ const FileUpload = ({ onFileUpload }) => {  // Accept a callback prop
     formData.append("file", file);
 
     try {
-      const response = await axios.post("http://localhost:8000/transcribe", formData, {
+      const response = await axios.post("http://127.0.0.1:8000/transcribe", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       setTranscription(response.data);

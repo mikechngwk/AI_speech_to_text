@@ -22,13 +22,13 @@ const App = () => {
   };
 
   const fetchTranscriptions = async () => {
-    const response = await fetch('http://localhost:8000/transcriptions');
+    const response = await fetch('http://127.0.0.1:8000/transcriptions');
     const data = await response.json();
     setTranscriptions(data.transcriptions);
   };
 
   const searchTranscription = async () => {
-    const response = await fetch(`http://localhost:8000/search?filename=${searchQuery}`);
+    const response = await fetch(`http://127.0.0.1:8000/search?filename=${searchQuery}`);
     const data = await response.json();
     console.log(data.results)
     setResult(data.results[0]);
