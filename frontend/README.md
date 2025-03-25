@@ -27,7 +27,7 @@ AI_speech_to_text/
 - Git bash (If using windows)
 
 ## **Installation Instructions**
-[Installation demo (VIDEO)](https://www.youtube.com/watch?v=AtbPpBTMBeY)
+[Installation demo (VIDEO)](https://youtu.be/z8k9XFEVN7M)
 ### 1. Clone the Repository:
 ```bash
 git clone https://github.com/mikechngwk/AI_speech_to_text.git
