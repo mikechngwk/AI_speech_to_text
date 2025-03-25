@@ -45,9 +45,16 @@ npm start
 ### 3. Test the React SPA
 https://localhost:3000
 
+## **Installation by Docker**
+```bash
+docker build -t speech-transcription-frontend .
+docker run -d -p 3000:80 my-speech-to-text-frontend
+```
+
 ## **Application Features**
 **File Upload**
 - Upload audio file for transcription
+
 
 
 **Retrieve all transcriptions**
