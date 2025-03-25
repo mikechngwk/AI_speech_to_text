@@ -30,6 +30,7 @@ fi
 #Check 4: Install Dependencies
 echo "Installing dependencies... this may take a while"
 pip install --upgrade pip
+cd backend
 pip install -r requirements.txt
 
 #Check 5: Run the FastAPI Server
