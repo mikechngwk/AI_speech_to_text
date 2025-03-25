@@ -97,6 +97,7 @@ source venv/bin/activate
 ### 4. Install the dependencies:
 Once the virtual environment is activated, run the following command to install all the required packages:
 ```bash
+cd backend/
 pip install -r requirements.txt
 ```
 
