@@ -35,7 +35,7 @@ AI_speech_to_text/
 
 ## Final Result
  - **Backend**
-![image info](./backend/images/fastapi.png)
+![image info](./backend/images/fastapi1.png)
  - **Frontend**
 ![image info](./frontend/images/frontend.png)
 

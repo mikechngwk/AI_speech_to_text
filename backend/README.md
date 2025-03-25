@@ -194,5 +194,5 @@ docker run -p 8000:8000 speech-transcription-backend
 }
 ```
 ### FastAPI Page:
-![image info](./images/fastapi.png)
+![image info](./images/fastapi1.png)
 
