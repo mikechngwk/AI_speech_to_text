@@ -23,11 +23,6 @@ npm install
 ```bash
 npm install --save-dev jest @testing-library/react @testing-library/jest-dom msw cypress
 ```
-
-- On **macOS/Linux**:
-```bash
-source venv/bin/activate
-```
 ### 4. Running the tests:
 - On **Windows (Using gitbash)**:
 - On **MAC use terminal**
