@@ -62,5 +62,5 @@ https://localhost:3000
 - **Response**: 
 
 ### Frontend Page:
-![image info](./images/frontend.png)
+![image info](./images/frontend1.png)
 
