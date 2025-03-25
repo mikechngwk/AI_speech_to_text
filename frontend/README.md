@@ -46,7 +46,7 @@ npm start
 https://localhost:3000
 
 ## **Installation by Docker**
-[Installation demo by docker (VIDEO)](https://www.youtube.com/watch?v=SxChnxVCCvk)
+[Installation demo by docker (VIDEO)](https://youtu.be/qvEIq3kvcY0)
 ```bash
 docker build -t speech-transcription-frontend .
 docker run -d -p 3000:80 speech-transcription-frontend
@@ -72,5 +72,5 @@ docker run -d -p 3000:80 speech-transcription-frontend
 - **Response**: 
 
 ### Frontend Page:
-![image info](./images/frontend1.png)
+![image info](./images/Frontendspeechtotext.png)
 
