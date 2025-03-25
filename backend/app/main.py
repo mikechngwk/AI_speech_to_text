@@ -15,7 +15,7 @@ app.include_router(search.router)
 
 app.add_middleware(
      CORSMiddleware,
-     allow_origins=["*"],  # Replace with frontend URL if needed (e.g., "http://localhost:3000")
+     allow_origins=["*"],
      allow_credentials=True,
      allow_methods=["*"],
      allow_headers=["*"],
