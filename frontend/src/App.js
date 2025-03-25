@@ -1,87 +1,122 @@
-import React, { useState } from 'react';
-import FileUpload from './components/FileUpload';
-import TranscriptionList from './components/TranscriptionList';
+import React, { useState } from "react";
+import FileUpload from "./components/FileUpload";
+import TranscriptionList from "./components/TranscriptionList";
+import TranscriptionSearch from "./components/TranscriptionSearch";
 
 const App = () => {
-  const [file, setFile] = useState(null);
   const [transcriptions, setTranscriptions] = useState([]);
   const [transcriptionsUploaded, setTranscriptionsUploaded] = useState([]);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [result, setResult] = useState(null);
-
-  const handleFileChange = (event) => {
-    setFile(event.target.files[0]);
-  };
-
-  const handleSearchChange = (event) => {
-    setSearchQuery(event.target.value);
-  };
 
   const handleFileUpload = (data) => {
-    setTranscriptionsUploaded((prevTranscriptions) => [...prevTranscriptions, data]);
+    setTranscriptionsUploaded((prevTranscriptionsUploaded) => [
+      ...prevTranscriptionsUploaded,
+      data,
+    ]);
   };
 
-  const fetchTranscriptions = async () => {
-    const response = await fetch('http://127.0.0.1:8000/transcriptions');
-    const data = await response.json();
-    setTranscriptions(data.transcriptions);
-  };
-
-  const searchTranscription = async () => {
-    const response = await fetch(`http://127.0.0.1:8000/search?filename=${searchQuery}`);
-    const data = await response.json();
-    console.log(data.results)
-    setResult(data.results[0]);
-    console.log(data.results[0])
-    console.log(Object.keys(data.results[0]).length)
-  };
-
-  const clearFetchAllTranscriptions = async () => {
-    setTranscriptions([])
-  };
-
-  const clearSearchedTranscriptions = async () => {
-    setResult([])
-  };
   return (
-    <div>
-      <h1>Audio Transcription</h1>
-      <FileUpload onFileUpload={handleFileUpload} />
+    <div
+      style={{
+        fontFamily: "Arial, sans-serif",
+        margin: "0",
+        padding: "0",
+        backgroundColor: "#f4f7fc",
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      {/* Header Section */}
+      <header
+        style={{
+          textAlign: "center",
+          padding: "20px 0",
+          backgroundColor: "#007bff",
+          color: "white",
+          width: "100%",
+        }}
+      >
+        <h1 style={{ fontSize: "36px", margin: "0" }}>Audio Transcription</h1>
+        <p style={{ fontSize: "18px", marginTop: "10px" }}>
+          Upload your audio files to get automatic transcriptions.
+        </p>
+      </header>
 
-      <div>
-        <button onClick={fetchTranscriptions}>Get All Transcriptions</button>
-        {transcriptions.map((transcription) => (<> 
-          <div key={transcription.filename}>{transcription.filename}</div>
-          <div key={transcription.created_at}>{transcription.created_at}</div>
-          <div key={transcription.id}>{transcription.transcription}</div>
-        </>
+      {/* Main Content */}
+      <main
+        style={{
+          maxWidth: "1000px",
+          width: "90%",
+          marginTop: "30px",
+          padding: "20px",
+          backgroundColor: "white",
+          borderRadius: "10px",
+          boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
+        }}
+      >
+        <section
+          style={{
+            marginBottom: "40px",
+            padding: "20px",
+            backgroundColor: "#f9f9f9",
+            borderRadius: "8px",
+            boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
+          }}
+        >
+          <h2 style={{ textAlign: "center", color: "#333" }}>
+            Upload a New File
+          </h2>
+          <FileUpload onFileUpload={handleFileUpload} />
+        </section>
 
-        ))}
-         <button onClick={clearFetchAllTranscriptions}>Clear all transcriptions</button>
-      </div>
-      <div>
-      <TranscriptionList/>
-      </div>
+        <section
+          style={{
+            marginBottom: "40px",
+            padding: "20px",
+            backgroundColor: "#f9f9f9",
+            borderRadius: "8px",
+            boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
+          }}
+        >
+          <h2 style={{ textAlign: "center", color: "#333" }}>
+            Transcription List
+          </h2>
+          <TranscriptionList />
+        </section>
 
-      <div>
-        <input
-          type="text"
-          placeholder="Search by filename"
-          style={{ width: '800px' }}
-          value={searchQuery}
-          onChange={handleSearchChange}
-        />
-        <button onClick={searchTranscription}>Search</button>
-        {/* {result && <div>{result.transcription}</div>} */}
-        {result && Object.keys(result).length > 0 && (<>
-          <div> {result.transcription}</div>
-          <div> Timestamp: {result.created_at}</div>
-          <div> Filename: {result.filename}</div>
+        <section
+          style={{
+            padding: "20px",
+            backgroundColor: "#f9f9f9",
+            borderRadius: "8px",
+            boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
+          }}
+        >
+          <h2 style={{ textAlign: "center", color: "#333" }}>
+            Search Transcriptions
+          </h2>
+          <TranscriptionSearch />
+        </section>
+      </main>
 
-        </>
-      ) }
-      <button onClick={clearSearchedTranscriptions}>Clear Searched transcriptions</button>
-      </div>
+      {/* Footer */}
+      <footer
+        style={{
+          textAlign: "center",
+          marginTop: "50px",
+          padding: "10px 0",
+          backgroundColor: "#333",
+          color: "white",
+          width: "100%",
+        }}
+      >
+        <p style={{ margin: "0", fontSize: "14px" }}>
+          &copy; {new Date().getFullYear()} Audio Transcription. All rights
+          reserved.
+        </p>
+      </footer>
     </div>
   );
 };
