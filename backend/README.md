@@ -69,7 +69,7 @@ bash setup.sh
 ### 3. Test the API
 
 Once up & running, visit:
-- **Swagger UI**: http://localhost:8000/docs
+- **Swagger UI**: http://127.0.0.1:8000/docs#
 
 ## **Installation (manual)**
 ### 1. Clone the Repository:
@@ -104,13 +104,13 @@ pip install -r requirements.txt
 ### 5. Running the Application:
 After installing the dependencies, you can run the FastAPI server with the following command, ensure you are inside `backend` directory:
 ```bash
-uvicorn app.main:app --host 0.0.0.0 --port 8000
+uvicorn app.main:app
 ```
 
 ### 6. Test the API
 
 Once up & running, visit:
-- **Swagger UI**: http://localhost:8000/docs
+- **Swagger UI**: http://127.0.0.1:8000/docs
 
 ## **Setup with Docker**
 

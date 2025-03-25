@@ -35,6 +35,6 @@ pip install -r requirements.txt
 
 #Check 5: Run the FastAPI Server
 echo "Starting the FastAPI server..."
-uvicorn main:app --host 0.0.0.0 --port 8000
+uvicorn app.main:app
 
-echo "Setup Complete! Access the API at http://localhost:8000"
+echo "Setup Complete! Access the API at http://127.0.0.1:8000/docs#"
