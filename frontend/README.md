@@ -49,7 +49,7 @@ https://localhost:3000
 [Installation demo by docker (VIDEO)](https://www.youtube.com/watch?v=SxChnxVCCvk)
 ```bash
 docker build -t speech-transcription-frontend .
-docker run -d -p 3000:80 my-speech-to-text-frontend
+docker run -d -p 3000:80 speech-transcription-frontend
 ```
 
 ## **Application Features**
