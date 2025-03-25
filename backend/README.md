@@ -114,8 +114,8 @@ Once up & running, visit:
 
 ## **Setup with Docker**
 
-### Containerization:
-
+### Installation with Docker:
+[Installation with Docker (VIDEO)](https://www.youtube.com/watch?v=M764suKBCos)
 ```bash
 docker build -t speech-transcription-backend .
 ```
