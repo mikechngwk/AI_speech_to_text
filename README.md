@@ -31,7 +31,7 @@ AI_speech_to_text/
 - [Frontend README](frontend/README.md)
 ## **Frontend Test**
 - The frontend is responsible for user interactions and displaying transcriptions. For detailed testing instructions, please refer to:
-- [Frontend_Test README](frontend/src/__tests__/README.md)
+- [Frontend_Test README](frontend/src/components/__tests__/README.md)
 
 ## Final Result
  - **Backend**
