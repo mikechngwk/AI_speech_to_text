@@ -4,7 +4,7 @@ This README provides instructions for setting up and running the test cases for 
 ## **Installation Instructions**
 
 ## **Installation**
-[How to run frontend test cases demo (VIDEO)](https://www.youtube.com/watch?v=n6steEE0A7Q)
+[How to run frontend test cases demo (VIDEO)](https://youtu.be/nHfjJDYDcSw)
 ### 1. Clone the Repository:
 ```bash
 git clone https://github.com/mikechngwk/AI_speech_to_text.git
