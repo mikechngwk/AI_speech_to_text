@@ -197,5 +197,5 @@ docker run -p 8000:8000 speech-transcription-backend
 
 ## **Backend Test**
 For detailed testing instructions, please refer to:
-- [Backend_Test README](backend/app/test/README.md)
+- [Backend_Test README](app/test/README.md)
 

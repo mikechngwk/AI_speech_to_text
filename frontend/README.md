@@ -76,5 +76,5 @@ docker run -d -p 3000:80 speech-transcription-frontend
 
 ## **Frontend Test**
 For detailed testing instructions, please refer to:
-- [Frontend_Test README](frontend/src/components/__tests__/README.md)
+- [Frontend_Test README](src/components/__tests__/README.md)
 
