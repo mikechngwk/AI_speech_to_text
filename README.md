@@ -37,5 +37,5 @@ AI_speech_to_text/
  - **Backend**
 ![image info](./backend/images/fastapi1.png)
  - **Frontend**
-![image info](./frontend/images/frontend1.png)
+![image info](./frontend/images/Frontendspeechtotext.png)
 
