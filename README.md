@@ -16,8 +16,9 @@ AI_speech_to_text/
 │   ├── app/
 │   │   ├── test/
 ├── frontend/
-│   ├── app/
-│   │   ├── test/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── __tests__/
 ```
 ## **Backend**
 - The backend manages speech-to-text processing tasks. For complete setup and usage instructions, please see:
