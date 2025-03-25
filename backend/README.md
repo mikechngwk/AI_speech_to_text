@@ -41,7 +41,6 @@ AI_speech_to_text/
 
 ## **Pre-Requisites**
 - Python Version: 3.12.3
-- OS: Windows 11 OS
 - Git bash (If using windows)
 
 - Install FFMPEG (for audio processing) -> Ensure it is in C:\ffmpeg\bin and have been added to path. Refer to the link below for setup guide.
