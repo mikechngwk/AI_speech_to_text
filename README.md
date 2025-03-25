@@ -1,6 +1,6 @@
 ## **Project Description**
 
-AI Speech-to-Text is a full-stack application that transcribes audio files using OpenAI’s Whisper-tiny model. The system consists of a **FastAPI backend** for audio processing and transcription storage, and a **frontend** for uploading files, viewing transcriptions, and searching past transcriptions. The entire project is containerized using Docker for easy deployment.
+AI Speech-to-Text is a full-stack application that transcribes audio files using OpenAI’s Whisper-tiny model. The system consists of a **backend** for audio processing and transcription storage, and a **frontend** for uploading files, viewing transcriptions, and searching past transcriptions. The entire project is containerized using Docker for easy deployment.
 ## **Features**
 
 - Upload and transcribe audio files 
