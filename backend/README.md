@@ -44,7 +44,7 @@ AI_speech_to_text/
 - OS: Windows 11 OS
 - Git bash (If using windows)
 
-- Install FFMPEG (for audio processing)
+- Install FFMPEG (for audio processing) -> Ensure it is in C:\ffmpeg\bin and have been added to path. Refer to the link below for setup guide.
 
    - Please refer to [FFMPEG Download](https://www.ffmpeg.org/download.html)
 
