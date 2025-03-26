@@ -47,10 +47,6 @@ AI_speech_to_text/
 
    - Please refer to [FFMPEG Download](https://www.ffmpeg.org/download.html)
 
-## **Installation Instructions**
-
-To run the project, you’ll need to install the following dependencies. You can set up your environment and install the required packages using the `requirements.txt` file.
-
 ## **Installation (script)**
 [Installation by script demo (VIDEO)](https://www.youtube.com/watch?v=I0Gz_oBWGEw)
 ### 1. Clone the Repository:
