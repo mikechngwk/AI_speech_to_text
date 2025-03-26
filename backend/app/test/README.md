@@ -113,7 +113,7 @@ pytest test/
 ### 2. Run specific tests:
 ```bash
 cd /speechtotext/backend/app/test
-pytest test/test_search.py
+pytest test_search.py
 ```
 ### Test result (desired):
 ![image info](./images_test/backendtestcases.png)
