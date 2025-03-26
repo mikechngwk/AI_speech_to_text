@@ -7,7 +7,7 @@ app = FastAPI(title="Speech to Text FastAPI_21032025")
 @app.get("/")
 
 
-# This is the rootendpoint that is part of the assignment requirement to check if service is up or not~
+
 def read_root():
     return {"message": "Test1!"}
 # Include routers for different endpoints
