@@ -3,7 +3,7 @@ from app.main import app  # Replace with the correct import path
 
 client = TestClient(app)
 
-
+#To test the api /transactions
 def test_get_transcriptions():
     response = client.get("/transcriptions")
 

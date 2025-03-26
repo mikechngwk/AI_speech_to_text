@@ -5,6 +5,7 @@ from app.main import app  # Adjust import path if necessary
 
 client = TestClient(app)
 
+#To test if audio is transcribed and api returns a good response
 def test_transcribe_audio():
     #relative path to the audiofile
     base_path = os.path.dirname(os.path.abspath(__file__))
