@@ -23,12 +23,12 @@ const TranscriptionList = () => {
   };
 
   const handleCopy = (filename) => {
-    // Remove the ".mp3" part before copying
+    // Remove the ".mp3" part before copying <-- already handled in backend too but just be safe
     const filenameWithoutExtension = filename.replace(".mp3", "");
     navigator.clipboard
       .writeText(filenameWithoutExtension)
       .then(() => {
-        // Optionally, you can add a message or visual feedback that the text was copied
+        // When filename is copied, it will throw a prompt so that user is assured that filename has been copied
         alert("Filename copied to clipboard!");
       })
       .catch((error) => {
