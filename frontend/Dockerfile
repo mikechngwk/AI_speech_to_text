@@ -25,5 +25,5 @@ COPY --from=build /app/build /usr/share/nginx/html
 # Expose the port for Nginx
 EXPOSE 80
 
-# Start Nginx in the foreground
+# Start Nginx in the foreground 
 CMD ["nginx", "-g", "daemon off;"]
