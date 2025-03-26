@@ -42,7 +42,7 @@ def get_all_transcriptions():
 def search_transcriptions(filename: str):
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
-    # Search by a substring match on filename
+    #Search by a substring match on filename | "LIKE" '%xxx%' for substring(xxx) match
     c.execute('''
         SELECT filename, transcription, created_at FROM transcriptions
         WHERE filename LIKE ?
